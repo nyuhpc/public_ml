@@ -8,10 +8,12 @@ import matplotlib.pyplot as plt
 
 
 ## Verify version
-print("tf.__version__ ")
+print("tf.__version__")
 print(tf.__version__)
-print("keras.__version__ ")
+print("keras.__version__")
 print(keras.__version__)
+print("Num GPUs Available:", len(tf.config.list_physical_devices("GPU")))
+
 
 ## Get data
 fashion_mnist = keras.datasets.fashion_mnist
@@ -29,7 +31,7 @@ class_names = ["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
 
 print("X_valid.shape")
 print(X_valid.shape)
-print("X_test.shape ")
+print("X_test.shape")
 print(X_test.shape)
 
 
