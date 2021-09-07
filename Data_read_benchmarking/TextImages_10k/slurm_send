@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --job-name=TextImg
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=2:00:00
+#SBATCH --mem=8GB
+
+#PRINCE PRINCE_RAM_DISK=4GB
+
+module load  anaconda3/5.3.1
+source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh;
+conda activate /scratch/ss13638/datasets/TextRec/penv
+
+python3 read_test.py

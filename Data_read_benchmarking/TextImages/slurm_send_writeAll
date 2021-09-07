@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --job-name=TextImg
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=12:00:00
+#SBATCH --mem=8GB
+
+module load  anaconda3/5.3.1
+source /share/apps/anaconda3/2019.10/etc/profile.d/conda.sh;
+conda activate /scratch/ss13638/datasets/TextRec/penv
+#conda install -y lmdb h5py
+
+#python3 write_jpg_lmdb_all.py
+python3 write_jpg_hdf5_all.py
