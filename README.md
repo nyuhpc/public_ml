@@ -1,2 +1,2 @@
 # public_ml_examples
-Repository containing examples of machine learning projects at HPC
+Repository containing code helping to start doing machine at HPC
