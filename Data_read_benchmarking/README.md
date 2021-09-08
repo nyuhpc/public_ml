@@ -1,2 +1,3 @@
 # Datasets
-HPC cluster has some datasets shared with public. This repository contains code used to convert data between formats. Also this repository contains benchmarks
+
+This repository contains code demonstrating conversion of data between storage formats and corresponding benchmarks performed at now retired HPC cluster Prince
